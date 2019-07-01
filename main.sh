@@ -16,4 +16,12 @@ git clone https://github.com/zsh-users/zsh-autosuggestions
 cd ~/.oh-my-zsh/custom/themes
 git clone https://github.com/bhilburn/powerlevel9k.git
 setxkbmap -layout us,th -option "grp:win_space_toggle"
-wget -P ~/.fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/AnonymousPro/complete/Anonymice%20Nerd%20Font%20Complete.ttf
+# wget -P ~/.fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/AnonymousPro/complete/Anonymice%20Nerd%20Font%20Complete.ttf
+
+sudo pacman -S snapd --noconfirm
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install code
+
+git config --global user.email coach.sathik@gmail.com
+git config --global user.name zoazh
