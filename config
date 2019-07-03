@@ -11,7 +11,8 @@
 
 set $mod Mod4
 
-set $base00 #101218
+set $dark #1b1b1b
+set $base00 #6a1b9a
 set $base01 #1f222d
 set $base02 #252936
 set $base03 #7780a1
@@ -57,9 +58,9 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec rofi -show drun
 # bindsym $mod+d exec rofi -show drun -show-icons -lines 5 -eh 2 -width 100 -padding 500 -opacity "80" -bw 0 -bc "$base01" -bg "$base02" -fg "$base07" -hlbg "$base05" -columns 2 -font "System San Francisco Display 18" -hlfg "#9575cd"
-# bindsym $mod+d exec rofi -show drun -show-icons -lines 3 -eh 2 -width 20 -padding 0 -color-normal "#fdf6e3,#002b36,#eee8d5,#586e75,#eee8d5"
-# bindsym $mod+d exec rofi -show drun -show-icons -lines 3 -eh 2 -width 20 -padding 0 -color-normal \\"#002d25,#002b36,#eee8d5,#586e75,#eee8d5\\"
-bindsym $mod+m exec echo "gg\\,gg"
+# bindsym $mod+d exec "rofi -show drun -display-drun Application -show-icons -lines 3 -eh 5 -width 30 -padding 5 -color-normal '$dark,$dark,$dark,$base00,$dark' -color-window '$dark,$dark,$dark,$base00,$dark'"
+bindsym $mod+d exec rofi -show drun -theme rofi_theme
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
