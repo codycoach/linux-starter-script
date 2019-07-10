@@ -195,12 +195,11 @@ bar {
         status_command i3status
 }
 
-for_window [class=".*"] border 
-gaps inner all set 20
+gaps inner 20
 
 
 exec_always feh --bg-scale ~/Pictures/wallpaper.jpg
-
+exec_always compton -f
 
 
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft

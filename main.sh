@@ -42,3 +42,12 @@ git clone https://github.com/bhilburn/powerlevel9k.git;
 # wget -P ~/.fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/AnonymousPro/complete/Anonymice%20Nerd%20Font%20Complete.ttf
 
 wget -O ~/Pictures/wallpaper.jpg https://bestwallpapers.in/wp-content/uploads/2018/07/wolf-howling-to-moon-minimal-4k-wallpaper-3840x2160.jpg
+
+# snap
+sudo pacman -S snapd --noconfirm
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+export PATH=$PATH:/snap/bin
+
+
+sudo snap install code --classic
