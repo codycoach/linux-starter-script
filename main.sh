@@ -6,11 +6,13 @@ sudo pacman-mirrors --fasttrack 10;
 yes|sudo pacman -Su;
 
 # settings
-setxkbmap -layout us,th -option "grp:win_space_toggle";
+setxkbmap -layout us,th -option "grp:alt_space_toggle";
 
 # sofware
 sudo pacman -S vim --noconfirm;
 sudo pacman -S feh --noconfirm;
+yaourt -S visual-studio-code-bin --noconfirm;
+yaourt -S google-chrome --noconfirm;
 
 # git
 git config --global user.email coach.sathik@gmail.com;
@@ -40,14 +42,14 @@ git clone https://github.com/bhilburn/powerlevel9k.git;
 
 
 # wget -P ~/.fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/AnonymousPro/complete/Anonymice%20Nerd%20Font%20Complete.ttf
-
 wget -O ~/Pictures/wallpaper.jpg https://bestwallpapers.in/wp-content/uploads/2018/07/wolf-howling-to-moon-minimal-4k-wallpaper-3840x2160.jpg
+wget -P ~/.fonts https://github.com/supermarin/YosemiteSanFranciscoFont/raw/master/System%20San%20Francisco%20Display%20Regular.ttf
+wget -P ~/.fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+
 
 # snap
-sudo pacman -S snapd --noconfirm
-sudo systemctl enable --now snapd.socket
-sudo ln -s /var/lib/snapd/snap /snap
-export PATH=$PATH:/snap/bin
+# sudo pacman -S snapd --noconfirm
+# sudo systemctl enable --now snapd.socket
+# sudo ln -s /var/lib/snapd/snap /snap
+# export PATH=$PATH:/snap/bin
 
-
-sudo snap install code --classic
