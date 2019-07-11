@@ -13,6 +13,8 @@ sudo pacman -S vim --noconfirm;
 sudo pacman -S feh --noconfirm;
 yaourt -S visual-studio-code-bin --noconfirm;
 yaourt -S google-chrome --noconfirm;
+yaourt -S unzip --noconfirm;
+yaourt -S polybar --noconfirml
 
 # git
 git config --global user.email coach.sathik@gmail.com;

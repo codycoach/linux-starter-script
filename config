@@ -118,19 +118,24 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:Home"
+set $ws1 "1:&#xe61e;"
 set $ws2 "2:&#xf268; Chrome"
-set $ws3 "3:s"
-set $ws4 "4:Intellij"
-set $ws5 "5:Postman"
-set $ws6 "6:"
-set $ws7 "7:"
-set $ws8 "8:"
-set $ws9 "9:"
-set $ws10 "10:"
+set $ws3 "3:&#xfb13;"
+set $ws4 "4:&#xfb13; Intellij"
+set $ws5 "5:&#xfb13; Postman"
+set $ws6 "6:&#xfb13; "
+set $ws7 "7:&#xfb13; "
+set $ws8 "8:&#xfb13; "
+set $ws9 "9:&#xfb13; "
+set $ws10 "10:&#xfb13; "
 
 assign [class="Google-chrome"] $ws2
 exec google-chrome-stable
+
+workspace $ws1 gaps inner 10
+
+# gaps inner 20
+for_window [class=".*"] border pixel 0
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -195,13 +200,9 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         # height 100
-        status_command i3status
+        # status_command i3status
         strip_workspace_numbers yes
-
 }
-
-gaps inner 20
-
 
 exec_always feh --bg-scale ~/Pictures/wallpaper.jpg
 exec_always compton -f
