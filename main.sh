@@ -45,11 +45,11 @@ git clone https://github.com/bhilburn/powerlevel9k.git;
 
 
 # wget -P ~/.fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/AnonymousPro/complete/Anonymice%20Nerd%20Font%20Complete.ttf
-wget -O ~/Pictures/wallpaper.jpg https://bestwallpapers.in/wp-content/uploads/2018/07/wolf-howling-to-moon-minimal-4k-wallpaper-3840x2160.jpg
+# wget -O ~/Pictures/wallpaper.jpg https://bestwallpapers.in/wp-content/uploads/2018/07/wolf-howling-to-moon-minimal-4k-wallpaper-3840x2160.jpg
 wget -P ~/.fonts https://github.com/supermarin/YosemiteSanFranciscoFont/raw/master/System%20San%20Francisco%20Display%20Regular.ttf
 wget -P ~/.fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
-
-
+wget -O ~/Pictures/wallpaper.jpg  https://wallpaperplay.com/walls/full/4/7/c/11389.jpg
+# https://wallpaperplay.com/walls/full/2/7/7/153590.jpg
 # snap
 # sudo pacman -S snapd --noconfirm
 # sudo systemctl enable --now snapd.socket
