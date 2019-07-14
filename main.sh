@@ -5,17 +5,6 @@ sudo pacman -Sy;
 sudo pacman-mirrors --fasttrack 10;
 yes|sudo pacman -Su;
 
-# settings
-setxkbmap -layout us,th -option "grp:alt_space_toggle";
-
-# sofware
-sudo pacman -S vim --noconfirm;
-sudo pacman -S feh --noconfirm;
-yaourt -S visual-studio-code-bin --noconfirm;
-yaourt -S google-chrome --noconfirm;
-yaourt -S unzip --noconfirm;
-yaourt -S polybar --noconfirml
-
 # git
 git config --global user.email coach.sathik@gmail.com;
 git config --global user.name zoazh;
@@ -26,6 +15,18 @@ sudo pacman -S package-query --noconfirm;
 git clone https://aur.archlinux.org/yaourt.git ~/.linux-starter-script/yaourt;
 cd ~/.linux-starter-script/yaourt;
 makepkg -si --noconfirm;
+
+# sofware
+sudo pacman -S vim --noconfirm;
+sudo pacman -S feh --noconfirm;
+yaourt -S visual-studio-code-bin --noconfirm;
+yaourt -S google-chrome --noconfirm;
+yaourt -S unzip --noconfirm;
+yaourt -S polybar --noconfirm;
+yaourt -S compton --noconfirm;
+
+# settings
+setxkbmap -layout us,th -option "grp:alt_space_toggle";
 
 # i3
 sudo pacman -S rofi --noconfirm;

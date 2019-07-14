@@ -2,5 +2,6 @@
     "files.associations": {
         "config": "shellscript",
         "*.rasi": "css"
-    }
+    },
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'mononoki Nerd Font', 'SpaceMono Nerd Font'"
 }
