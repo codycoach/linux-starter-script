@@ -25,8 +25,6 @@ yaourt -S unzip --noconfirm;
 yaourt -S polybar --noconfirm;
 yaourt -S compton --noconfirm;
 
-# settings
-setxkbmap -layout us,th -option "grp:alt_space_toggle";
 
 # i3
 sudo pacman -S rofi --noconfirm;

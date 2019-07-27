@@ -1,4 +1,5 @@
 {
+    "explorer.confirmDragAndDrop": false,
     "files.associations": {
         "config": "shellscript",
         "*.rasi": "css"

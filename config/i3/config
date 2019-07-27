@@ -218,6 +218,7 @@ bindsym $mod+r mode "resize"
 
 exec_always feh --bg-scale ~/Pictures/wallpaper.jpg
 exec_always compton -f
+exec_always setxkbmap -layout us,th -option "grp:alt_space_toggle"
 
 
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
