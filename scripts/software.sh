@@ -10,7 +10,6 @@ yaourt -S compton --noconfirm;
 yaourt -S rofi --noconfirm;
 yaourt -S i3 --noconfirm;
 yaourt -S nerd-fonts-source-code-pro --noconfirm
-yaourt -S hyper --noconfirm
 
 # zsh
 sudo pacman -S zsh --noconfirm;
