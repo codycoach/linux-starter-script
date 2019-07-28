@@ -18,3 +18,6 @@ cd ~/.oh-my-zsh/custom/plugins;
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting;
 cd ~/.oh-my-zsh/custom/themes;
 git clone https://github.com/bhilburn/powerlevel9k.git;
+
+yaourt -S rxvt-unicode --noconfirm 
+export TERM=rxvt
